@@ -1,0 +1,31 @@
+@import "./_scss/variables.scss";
+
+.app {
+  overflow: auto;
+  height: 100vh;
+  font-size: $font-size;
+  font-size: $primary-text-color;
+
+  nav.site-nav {
+    ul {
+      margin: 0;
+      padding: 0 $padding-16;
+      height: 60px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      background-color: #212121;
+      & li:first-child {
+        flex: 1;
+        padding: 0;
+      }
+    }
+
+    a {
+      display: inline-flex;
+      text-decoration: none;
+      padding: $padding-8;
+      color: white;
+    }
+  }
+}
